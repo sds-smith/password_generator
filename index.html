@@ -2,10 +2,23 @@
 <html>
     <head>
         <title>Random Password Generator</title>
+        <link href='index.css' rel='stylesheet'>
+        <script src='index.js' defer></script>
     </head>
 
     <body>
         <h1>Random Password Generator</h1>
+        <div class='input-container'>
+            <input type="number" placeholder="Minimum Length"/>
+            <input type="number" placeholder="Maximum Length"/>
+            <input type="checkbox" name='include-digits'/>
+            <label for="include-digits">Include Digits?</label>
+            <input type="checkbox" name='special-char'/>
+            <label for="special-char">Include Special Characters?</label>            
+            <button >GENERATE</button>
+        </div>
+        <div class="password-container">
+        </div>
     </body>
 
 </html>

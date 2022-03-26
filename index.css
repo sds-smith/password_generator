@@ -19,10 +19,12 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-h1 {
+h1, h2 {
     width: 100%;
     text-align: center;
 }
+
+
 
 .input-container {
     width: 100%;

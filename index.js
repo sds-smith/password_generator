@@ -18,8 +18,8 @@ const setPasswordElement = (password) => {
 const generatePassword = () => {    
     const minLength = document.getElementById('min-length').value ? document.getElementById('min-length').value : 8
     const maxLength = document.getElementById('max-length').value ? document.getElementById('max-length').value : 16
-    const includeNum = document.getElementById('include-num').checked
-    const includeSpec = document.getElementById('include-spec').checked
+    const includeNum = document.getElementById('include-digits').checked
+    const includeSpec = document.getElementById('special-char').checked
 
     const pwLength = Math.floor(minLength) + Math.floor(Math.random() * (maxLength - minLength)) 
     const pickList = setPicklist(includeNum, includeSpec)
@@ -39,3 +39,8 @@ const copy = () => {
     return document.execCommand('copy')
 }
 
+const toggleView = () => {
+    const pwInput = document.getElementById('hidden-input')
+    const isHidden = pwInput.type === 'password'
+    isHidden ? pwInput.type = 'text' : pwInput.type = 'password'
+}

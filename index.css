@@ -105,10 +105,25 @@ label {
 button {
   height: 2.8rem;
   border-radius: 14px;
+  background-color: hsl(15, 80%, 80%);
+  border: none;
+}
+
+button:hover {
+  opacity: 50%;
 }
 
 .input-container button {
   margin: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  margin: 0 .5rem;
 }
 @media only screen and (max-width: 1020px) {
   .center {

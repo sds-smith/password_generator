@@ -36,7 +36,7 @@ const generatePassword = () => {
 const copy = () => {
     let copyText = document.getElementById("hidden-input");
     copyText.select();
-    return document.execCommand('copy')
+    navigator.clipboard.writeText(copyText.value);
 }
 
 const toggleView = () => {

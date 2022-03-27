@@ -19,12 +19,33 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-h1, h2 {
-    width: 100%;
-    text-align: center;
+.main-container {
+  display: flex;
+  height: 100vh;
 }
 
+.left {
+  width: 25%;
+  background: linear-gradient(to right, #eee, #333); 
+}
 
+.center {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  width: 25%;
+  background: linear-gradient(to left, #eee, #333); 
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  background-color: aqua;
+}
 
 .input-container {
     width: 100%;
@@ -32,5 +53,17 @@ h1, h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: salmon;
+}
 
+
+#password-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  background-color: aqua;
 }

@@ -12,7 +12,7 @@ const setPicklist = (includeNum, includeSpec) => {
 
 const setPasswordElement = (password) => {
     const passwordElement = document.getElementById('password-container').firstElementChild
-    passwordElement.innerHTML = password
+    passwordElement.value = password
 }
 
 const generatePassword = () => {    
@@ -31,5 +31,11 @@ const generatePassword = () => {
     }
     
     setPasswordElement(password)
+}
+
+const copy = () => {
+    let copyText = document.getElementById("hidden-input");
+    copyText.select();
+    return document.execCommand('copy')
 }
 

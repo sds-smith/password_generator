@@ -22,6 +22,7 @@ time, mark, audio, video {
 .main-container {
   display: flex;
   height: 100vh;
+  font-size: 1rem;
 }
 
 .left {
@@ -33,7 +34,7 @@ time, mark, audio, video {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:flex-start;
 }
 
 .right {
@@ -43,22 +44,28 @@ time, mark, audio, video {
 
 h1 {
   width: 100%;
+  height: 10%;
   text-align: center;
+  font-size: 2rem;
+  padding-top: 4rem;
   background-color: aqua;
 }
 
 .input-container {
     width: 100%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 1.2rem;
     background-color: salmon;
 }
 
 
 #password-container {
   width: 100%;
+  height: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,4 +73,22 @@ h1 {
   align-content: center;
   justify-items: center;
   background-color: aqua;
+}
+
+input {
+  text-align: center;
+  height: 2rem;
+  width: 14rem;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 1020px) {
+  .center {
+    width: 100%;
+  }
+
+  .left,
+  .right {
+    display: none;
+  }
 }

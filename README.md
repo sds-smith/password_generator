@@ -33,12 +33,12 @@ The output section contains one input field and two buttons:
 
   The password generator runs on the following five functions:
 
-  1. setPicklist sets the array of characters available for the password.  Includes lowercase letters, uppercase letters, numbers 0-9, and special characters !@#$%^&*_-+= by default.  Excludes numbers and/or special characters if the user unchecks those boxes.  This function is called by generatePassword.
+  1. **`setPicklist`** sets the array of characters available for the password.  Includes lowercase letters, uppercase letters, numbers 0-9, and special characters !@#$%^&*_-+= by default.  Excludes numbers and/or special characters if the user unchecks those boxes.  This function is called by generatePassword.
 
-  2. generatePassword is called by a click event on the 'generate' button.  Gets values for password parameters from the DOM elements, sets the password length to a random number between minimum and maximum inclusive, calls setPicklist, then sets password to a string of randomly selected characters from pickList, and finally calls setPasswordElement.
+  2. **`generatePassword`** is called by a click event on the 'generate' button.  Gets values for password parameters from the DOM elements, sets the password length to a random number between minimum and maximum inclusive, calls setPicklist, then sets password to a string of randomly selected characters from pickList, and finally calls setPasswordElement.
 
-  3. setPasswordElement sets the value of the readonly password input field to the newly created password.
+  3. **`setPasswordElement`** sets the value of the readonly password input field to the newly created password.
 
-  4. copy is called by a click event on the 'copy' button and copies the value of the readonly password input to the clipboard.
+  4. **`copy`** is called by a click event on the 'copy' button and copies the value of the readonly password input to the clipboard.
 
-  5. toggleView is called by a click event on the 'view' button and toggles the type attribute of the readonly password input between 'password' and 'text' so that the user can control visibility of the password.
+  5. **`toggleView`** is called by a click event on the 'view' button and toggles the type attribute of the readonly password input between 'password' and 'text' so that the user can control visibility of the password.

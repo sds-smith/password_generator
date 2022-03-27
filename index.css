@@ -85,13 +85,21 @@ input {
   width: 7.5rem;
 }
 
-.checkbox {
-  justify-self: center;
+.checkbox-container {
+  margin-left: 9rem;
 }
 
 label {
-  margin: 0px;
-  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  text-indent: -15px;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  flex-basis: 4rem;
+  vertical-align: center;
 }
 
 button {

@@ -128,7 +128,7 @@ button:hover {
 }
 @media only screen and (max-width: 1020px) {
   html {
-    font-size: 6rem;
+    font-size: 32px;
   }
   .center {
     width: 100%;

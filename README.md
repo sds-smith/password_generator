@@ -29,7 +29,7 @@ The output section contains one input field and two buttons:
 * The 'view' button toggles the type attribute of the input from type=password to type=text so that the user can view the password if desired
 * The copy button initiates the copy function when clicked, which copies the value of the password input to the clipboard.  The user is also able to focus, highlight, and manually copy the password if desired.
 
-  ## Functions:
+## Functions:
 
   The password generator runs on the following five functions:
 

@@ -14,10 +14,14 @@
                 <div class='input-container'>
                     <input type="number" id='min-length'placeholder="Minimum Length"/>
                     <input type="number" id='max-length'placeholder="Maximum Length"/>
-                    <input type="checkbox" id="include-num" name='include-digits'/>
-                    <label for="include-digits">Include Digits?</label>
-                    <input type="checkbox" id='include-spec'name='special-char'/>
-                    <label for="special-char">Include Special Characters?</label>            
+                    <label for='include-digits'>
+                        <input type="checkbox" class='checkbox' id="include-digits" name='include-digits'/>
+                        Include Digits?
+                    </label>
+                    <label for='special-char'>
+                        <input type="checkbox" class='checkbox' id='special-char'name='special-char'/>
+                        Include Special Characters?
+                    </label>            
                     <button onclick=generatePassword()>GENERATE</button>
                 </div>
                 <div id='password-container'>

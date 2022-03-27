@@ -78,7 +78,20 @@ input {
   text-align: center;
   height: 2rem;
   width: 14rem;
-  margin: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-container input {
+  width: 7.5rem;
+}
+
+.checkbox {
+  justify-self: center;
+}
+
+label {
+  margin: 0px;
+  padding: 0px;
 }
 
 button {
